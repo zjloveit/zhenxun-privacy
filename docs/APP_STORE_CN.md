@@ -11,7 +11,8 @@
 ## App Store Connect 必填
 
 1. **隐私政策 URL**  
-   将 `docs/隐私政策-网页版.md` 发布到您的网站（GitHub Pages、Notion 公开页等），填入 App Store Connect。
+   使用 GitHub Pages 发布：见 `docs/GITHUB_PAGES.md`。  
+   上线后填入：`https://<你的GitHub用户名>.github.io/zhenxun-privacy/`
 
 2. **App 隐私问卷**  
    - 定位：用于 App 功能，不用于追踪  
