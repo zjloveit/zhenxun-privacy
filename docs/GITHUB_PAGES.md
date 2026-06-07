@@ -1,9 +1,9 @@
-# GitHub Pages 发布说明
+# GitHub Pages 发布说明（日本向け）
 
-隐私政策页面文件：
+隐私政策页面（**日语**）：
 
-- `docs/index.html` — 主页面（App Store 填这个 URL）
-- `docs/user-agreement.html` — 用户协议（可选）
+- `docs/index.html` — プライバシーポリシー（App Store Connect にこの URL）
+- `docs/user-agreement.html` — 利用規約（任意）
 
 ## 一键发布（终端）
 
@@ -43,7 +43,7 @@ https://你的GitHub用户名.github.io/zhenxun-privacy/index.html
 
 ## 验证
 
-浏览器打开上述 URL，应能看到「震讯 隐私政策」页面。
+浏览器打开上述 URL，应能看到「地震速報 プライバシーポリシー」页面。
 
 ## 更新政策
 

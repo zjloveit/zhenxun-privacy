@@ -1,22 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>震讯 · 用户协议</title>
+  <title>地震速報 · 利用規約</title>
+  <meta name="description" content="地震速報 iOS アプリの利用規約" />
   <style>
-    body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.7; }
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.1rem; margin-top: 1.5em; }
-    a { color: #e85d04; }
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c6570;
+      --accent: #e85d04;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1419;
+        --card: #1a2332;
+        --text: #f0f4f8;
+        --muted: #9aa5b1;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    header h1 { margin: 0 0 8px; font-size: 1.75rem; }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    article {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 1.6em 0 0.6em;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    h2:first-of-type { margin-top: 0; }
+    ul { padding-left: 1.2em; }
+    li { margin: 0.35em 0; }
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    a { color: var(--accent); }
   </style>
 </head>
 <body>
-  <h1>震讯 用户协议</h1>
-  <p>更新日期：2026年6月1日</p>
-  <p>使用本应用即表示您已阅读并同意本协议。本应用为第三方地震信息服务工具，<strong>不是</strong>政府官方地震预警发布平台。</p>
-  <h2>免责声明</h2>
-  <p>提醒信息可能存在延迟或误差，不构成安全保证。遇地震请遵循政府应急指引。</p>
-  <p><a href="index.html">返回隐私政策</a></p>
+  <main>
+    <header>
+      <h1>地震速報 利用規約</h1>
+      <p>更新日：2026年6月1日</p>
+    </header>
+
+    <article>
+      <p>「地震速報」をご利用いただきありがとうございます。本規約に同意のうえご利用ください。</p>
+
+      <h2>一、サービスの性質</h2>
+      <ol>
+        <li>本アプリは地震情報の閲覧、地図表示、第三者データに基づく通知および到達時間の推定を提供する情報ツールです。</li>
+        <li>本アプリは気象庁の公式緊急地震速報発表アプリではありません。</li>
+        <li>情報の遅延・誤差・欠落があり得ます。安全を保証するものではありません。</li>
+      </ol>
+
+      <h2>二、ユーザーの責任</h2>
+      <ul>
+        <li>法令に反する利用をしないこと</li>
+        <li>地震時は直ちに公式の避難情報に従うこと（本アプリのみに依存しないこと）</li>
+      </ul>
+
+      <h2>三、知的財産</h2>
+      <p>アプリの UI・コードは開発者に帰属します。地震データの権利は各提供元に帰属します。</p>
+
+      <h2>四、免責</h2>
+      <p>地震、通信障害、データ誤り、端末故障等により生じた損害について、開発者は法令で認められる範囲を超えて責任を負いません。</p>
+
+      <h2>五、広告</h2>
+      <p>無料版には第三者広告（Google AdMob 等）が含まれます。緊急地震速報の全画面表示中は広告を表示しません。</p>
+
+      <h2>六、変更・終了</h2>
+      <p>本規約は変更される場合があります。いつでもアンインストールにより利用を終了できます。</p>
+
+      <h2>七、準拠法</h2>
+      <p>本規約は日本法を準拠法とします。紛争は開発者の所在地を管轄する裁判所を第一審の専属的合意管轄とします。</p>
+    </article>
+
+    <footer>
+      <p><a href="index.html">プライバシーポリシーに戻る</a></p>
+    </footer>
+  </main>
 </body>
 </html>
