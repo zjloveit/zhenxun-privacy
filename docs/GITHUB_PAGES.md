@@ -3,6 +3,7 @@
 隐私政策页面（**日语**）：
 
 - `docs/index.html` — プライバシーポリシー（App Store Connect にこの URL）
+- `docs/support.html` — サポート / 技术支持（App Store Connect「サポートURL」）
 - `docs/user-agreement.html` — 利用規約（任意）
 
 ## 一键发布（终端）
@@ -29,13 +30,14 @@ git push -u origin main
 3. Branch 选 **main**，文件夹选 **/docs**
 4. 点 **Save**，等待 1～3 分钟
 
-## 隐私政策 URL（填入 App Store Connect）
+## URL（填入 App Store Connect）
 
-```
-https://你的GitHub用户名.github.io/zhenxun-privacy/
-```
+| 字段 | URL |
+|------|-----|
+| 隐私政策 URL | `https://你的GitHub用户名.github.io/zhenxun-privacy/` |
+| 技术支持 URL | `https://你的GitHub用户名.github.io/zhenxun-privacy/support.html` |
 
-注意末尾要有 `/`，或直接使用：
+注意隐私政策末尾要有 `/`，或直接使用：
 
 ```
 https://你的GitHub用户名.github.io/zhenxun-privacy/index.html
@@ -43,7 +45,7 @@ https://你的GitHub用户名.github.io/zhenxun-privacy/index.html
 
 ## 验证
 
-浏览器打开上述 URL，应能看到「地震速報 プライバシーポリシー」页面。
+浏览器打开上述 URL，应能看到「地震速報ヘルパー プライバシーポリシー」页面。
 
 ## 更新政策
 

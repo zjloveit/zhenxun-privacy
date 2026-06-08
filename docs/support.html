@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>地震速報ヘルパー · サポート</title>
+  <meta name="description" content="地震速報ヘルパー iOS アプリの技術サポート・よくある質問" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c6570;
+      --accent: #e85d04;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1419;
+        --card: #1a2332;
+        --text: #f0f4f8;
+        --muted: #9aa5b1;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+    }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(232, 93, 4, 0.12);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    article {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 1.6em 0 0.6em;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 {
+      font-size: 1rem;
+      margin: 1.2em 0 0.4em;
+      color: var(--text);
+    }
+    ul, ol { padding-left: 1.2em; }
+    li { margin: 0.35em 0; }
+    .notice {
+      margin-top: 1.5em;
+      padding: 14px 16px;
+      border-radius: 10px;
+      background: rgba(232, 93, 4, 0.08);
+      font-size: 0.95rem;
+    }
+    .contact-box {
+      margin-top: 1em;
+      padding: 16px 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(232, 93, 4, 0.25);
+      background: rgba(232, 93, 4, 0.05);
+    }
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer p { margin: 0.35em 0; }
+    a { color: var(--accent); }
+    dl { margin: 0; }
+    dt { font-weight: 600; margin-top: 1em; }
+    dd { margin: 0.25em 0 0 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>地震速報ヘルパー サポート</h1>
+      <p>更新日：2026年6月1日</p>
+      <span class="badge">技術サポート · FAQ</span>
+    </header>
+
+    <article>
+      <p>「地震速報ヘルパー」のご利用に関するよくある質問とお問い合わせ方法をご案内します。</p>
+
+      <div class="notice">
+        本アプリは<strong>気象庁の公式緊急地震速報アプリではありません</strong>。生命・安全に関わる判断は、必ず気象庁・自治体・テレビ・防災無線などの公式情報を優先してください。
+      </div>
+
+      <h2>よくある質問（FAQ）</h2>
+
+      <h3>地震情報が表示されない</h3>
+      <ul>
+        <li>インターネット接続（Wi‑Fi / モバイルデータ）を確認してください。</li>
+        <li>ホーム画面を下に引いて更新（プルリフレッシュ）してください。</li>
+        <li>データは第三者サービス <a href="https://wolfx.jp/" rel="noopener">Wolfx Open API</a> 経由で取得しています。サービス側の障害・メンテナンス時は表示が遅延または停止する場合があります。</li>
+      </ul>
+
+      <h3>緊急地震速報の通知が来ない</h3>
+      <ul>
+        <li>iOS の「設定 → 通知 → 地震速報ヘルパー」で通知が許可されているか確認してください。</li>
+        <li>アプリ内「設定」で最小マグニチュード・最大通知距離のしきい値を確認してください。条件を満たさない地震は通知されません。</li>
+        <li>「リアルタイム受信（WebSocket）」をオンにすると速報の受信が早まる場合があります（バッテリー消費が増えることがあります）。</li>
+        <li>訓練報・取消報は通知対象外です。</li>
+      </ul>
+
+      <h3>位置情報・到達時間の推定について</h3>
+      <ul>
+        <li>位置情報は任意です。許可すると震源からの距離と到達時間の<strong>推定</strong>に使用します。</li>
+        <li>推定値は参考情報であり、実際の揺れの強さや到達時刻を保証するものではありません。</li>
+        <li>位置情報は「設定 → プライバシーとセキュリティ → 位置情報サービス」でいつでもオフにできます。</li>
+      </ul>
+
+      <h3>広告が表示されない</h3>
+      <ul>
+        <li>無料版では <a href="https://admob.google.com/" rel="noopener">Google AdMob</a> による広告を表示します。</li>
+        <li>通信環境や広告在庫の都合で、一時的に広告が表示されない場合があります。</li>
+        <li>緊急地震速報の全画面表示中は、安全のため広告を表示しません。</li>
+      </ul>
+
+      <h3>公式アプリとの違いは？</h3>
+      <p>気象庁や自治体が提供する公式の防災アプリ・緊急地震速報と併用することを強くおすすめします。本アプリは補助的な情報ツールです。</p>
+
+      <h2>アプリ情報</h2>
+      <dl>
+        <dt>アプリ名</dt>
+        <dd>地震速報ヘルパー</dd>
+        <dt>対応 OS</dt>
+        <dd>iOS 17.0 以降</dd>
+        <dt>データ出典</dt>
+        <dd>Wolfx Open API（気象庁情報の第三者転送・非公式）</dd>
+      </dl>
+
+      <h2>お問い合わせ</h2>
+      <div class="contact-box">
+        <p>不具合の報告・機能に関するご質問は、以下のいずれかからご連絡ください。</p>
+        <ul>
+          <li><strong>App Store</strong>：アプリの商品ページから「デベロッパに連絡」（開発者向けメッセージ）</li>
+          <li><strong>GitHub</strong>：<a href="https://github.com/zjloveit/zhenxun-privacy/issues" rel="noopener">Issues（お問い合わせ）</a> に投稿（日本語・中国語・英語可）</li>
+        </ul>
+        <p style="margin-bottom:0;font-size:0.9rem;color:var(--muted);">お問い合わせの際は、iOS のバージョン、端末機種、問題の再現手順をお書きいただけると対応がスムーズです。生命に関わる緊急事態の連絡先ではありません。</p>
+      </div>
+
+      <h2>関連リンク</h2>
+      <ul>
+        <li><a href="index.html">プライバシーポリシー</a></li>
+        <li><a href="user-agreement.html">利用規約</a></li>
+        <li><a href="https://wolfx.jp/apidoc" rel="noopener">Wolfx API ドキュメント</a></li>
+      </ul>
+    </article>
+
+    <footer>
+      <p>© 地震速報ヘルパー</p>
+      <p><a href="index.html">プライバシーポリシー</a> · <a href="user-agreement.html">利用規約</a></p>
+    </footer>
+  </main>
+</body>
+</html>
